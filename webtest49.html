@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="600" height="400" style="border :3px solid">
+
+        </canvas>
+        <script type="text/javascript">
+            var ctx=document.getElementById("myCanvas");
+            var myContext=ctx.getContext("2d");
+
+            myContext.beginPath();
+            myContext.moveTo(100,20);
+            myContext.lineTo(20,120);
+            myContext.lineTo(180,120);
+            myContext.closePath();
+            myContext.fill();
+
+            myContext.moveTo(350,20);
+            myContext.lineTo(200,60);
+            myContext.lineTo(200,160);
+            myContext.lineTo(500,160);
+            myContext.lineTo(500,60);
+            myContext.closePath();
+            myContext.stroke();
+        </script>
+    </body>
+</html>
